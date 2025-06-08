@@ -1,7 +1,224 @@
-body{
-    background-color:#1f2346;
+@import url('style.css');
+
+.menu-section {
+    padding: 80px 0;
 }
-p{
-    color: white;
+
+.menu-section h2 {
     text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 40px;
+    position: relative;
 }
+
+.menu-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.category {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.category h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed var(--accent);
+}
+
+.menu-items {
+    display: grid;
+    gap: 20px;
+}
+
+.menu-item {
+    padding: 15px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-price {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.item-desc {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+    
+    .category h3 {
+        font-size: 1.5rem;
+    }
+}@import url('style.css');
+
+.menu-section {
+    padding: 80px 0;
+}
+
+.menu-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.menu-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.category {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.category h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed var(--accent);
+}
+
+.menu-items {
+    display: grid;
+    gap: 20px;
+}
+
+.menu-item {
+    padding: 15px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-price {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.item-desc {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+    
+    .category h3 {
+        font-size: 1.5rem;
+    }
+}
+   .menu-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .menu-column {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 250px;
+    }
+    .menu-column h2 {
+      border-bottom: 2px dashed orange;
+    }
+    .menu-item {
+      margin-bottom: 15px;
+    }
+    .item-name {
+      font-weight: bold;
+      color: #c90000;
+    }
+    .item-price {
+      font-weight: bold;
+    }
+    .item-desc {
+      color: #444;
+      font-size: 0.9em;
+    }
+    button {
+      background-color: orange;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cart {
+      margin-top: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
